@@ -1,0 +1,59 @@
+@mixin btn {
+  .btn {
+    background-color: $header-bg-color;
+    border: none;
+    color: inherit;
+    font-size: 14px;
+    letter-spacing: 0.0892857143em;
+    font-family: $header-font-family;
+    padding: 0.7rem 0.7rem;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+@mixin flex-prop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin footer {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $header-bg-color;
+    padding: 20px;
+    color: $header-font-color;
+
+    &__logo {
+      display: flex;
+      align-items: center;
+    }
+    &__img {
+      font-size: 10px;
+      height: 4rem;
+      width: 4rem;
+    }
+    &__link {
+      color: $header-font-color;
+      text-decoration: none;
+    }
+    &__text {
+      margin-left: 10px;
+    }
+    &__version {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    &__info-text {
+      font-style: italic;
+    }
+    &__info {
+      display: block;
+      text-align: center;
+    }
+  }
+}

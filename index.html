@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/sass/main.css" />
+    <title>Layout Design</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="header">
+      <div class="header__left">
+        <button href="#" class="btn header__logo">
+          <img
+            src="/resources/logo/angular-white-transparent.svg"
+            alt="Angular Logo"
+            class="header__logo-image"
+          />
+          <span class="header__logo-text">Material</span>
+        </button>
+        <nav class="header__nav">
+          <button class="btn header__item">Components</button>
+          <button class="btn header__item">CDK</button>
+          <button class="btn header__item">Guides</button>
+        </nav>
+      </div>
+      <div class="header__right">
+        <button class="btn header__button-version">
+          <span class="material-symbols-outlined header__arrow-sign">
+            expand_more
+          </span>
+          <span class="header__button-text">16.0.0</span>
+        </button>
+        <button href="#" class="btn header__github-link">
+          <img
+            src="/resources/logo/github-circle-white-transparent.svg"
+            alt=""
+            class="image"
+          />
+          <span class="header__github-text">GitHub</span>
+        </button>
+      </div>
+    </header>
+    <!-- main section -->
+    <main class="main">
+      <!-- display section -->
+      <div class="main__display">
+        <div class="main__display-content">
+          <h1 class="main__heading">Angular Material</h1>
+          <p class="main__description">
+            Material Design components for Angular
+          </p>
+          <button class="main__button">Get Started</button>
+
+          <div class="main__search">
+            <input
+              class="main__search-input"
+              id="search-input"
+              type="text"
+              placeholder="Search Components..."
+            />
+            <button class="btn main__search-button">Search</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- content section -->
+      <div class="main__content">
+        <div class="cards">
+          <div class="card">
+            <h2 class="card__title">High Quality</h2>
+            <p class="card__description">
+              Internationalized and accessible components for everyone. Well
+              tested to ensure performance and reliability.
+            </p>
+          </div>
+          <div class="card">
+            <h2 class="card__title">Versatile</h2>
+            <p class="card__description">
+              Provide tools that help developers build their own custom
+              components with common interaction patterns.
+            </p>
+          </div>
+          <div class="card">
+            <h2 class="card__title">Frictionless</h2>
+            <p class="card__description">
+              Built by the Angular team to integrate seamlessly with Angular.
+              Start from scratch or drop into your existing applications.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      <!-- feature section -->
+      <div class="main__features">
+        <div class="card">
+          <img
+            src="/resources/img/datepicker.scene.png"
+            alt="Card Image"
+            class="card__logo"
+          />
+          <h3 class="card__title">Datepicker</h3>
+        </div>
+        <div class="card">
+          <img
+            src="/resources/img/input.scene.png"
+            alt="Card Image"
+            class="card__logo"
+          />
+          <h3 class="card__title">Input</h3>
+        </div>
+        <div class="card">
+          <img
+            src="/resources/img/slide-toggle.scene.png"
+            alt="Card Image"
+            class="card__logo"
+          />
+          <h3 class="card__title">Slide Toggle</h3>
+        </div>
+      </div>
+      <div class="horizontal-line"></div>
+      <!-- guides section -->
+      <div class="main__guides">
+        <div class="card">
+          <p class="card__title">Getting Started</p>
+          <div class="card__divider"></div>
+          <p class="card__description">
+            Learn how to start using Angular Material in your project.
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__title">Schemantics</p>
+          <div class="card__divider"></div>
+
+          <p class="card__description">
+            Discover how to use Angular Material's built-in themes and palettes.
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__title">Theming Angular Material</p>
+          <div class="card__divider"></div>
+          <p class="card__description">
+            Customize Angular Material's look and feel to fit your brand.
+          </p>
+        </div>
+      </div>
+      <!-- utilities section -->
+      <div class="main__utilities">
+        <div class="utilities__item">
+          <img
+            src="/resources/logo/stackoverflow-logo.svg"
+            alt=""
+            class="utilities__logo"
+          />
+          <p class="utilities__title">Stack Overflow</p>
+          <p class="utilities__description">
+            Questions tagged with angular-material or angular-cdk
+          </p>
+        </div>
+        <div class="utilities__item">
+          <img
+            src="/resources/logo/discord-logo.svg"
+            alt=""
+            class="utilities__logo"
+          />
+          <p class="utilities__title">Discord</p>
+          <p class="utilities__description">Angular Community on Discord</p>
+        </div>
+        <div class="utilities__item">
+          <img
+            src="/resources/logo/google-groups-logo.png"
+            alt=""
+            class="utilities__logo"
+          />
+          <p class="utilities__title">Google Groups</p>
+          <p class="utilities__description">
+            Angular Components discussion forum
+          </p>
+        </div>
+        <div class="utilities__item">
+          <img
+            src="/resources/logo/twitter-logo.svg"
+            alt=""
+            class="utilities__logo"
+          />
+          <p class="utilities__title">Twitter</p>
+          <p class="utilities__description">Connect with @angular on Twitter</p>
+        </div>
+        <div class="utilities__item">
+          <img
+            src="/resources/logo/angular-logo.svg"
+            alt=""
+            class="utilities__logo"
+          />
+          <p class="utilities__title">Angular</p>
+          <p class="utilities__description">
+            News and Tips from the Angular Team
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- footer section-->
+    <footer class="footer">
+      <div class="footer__logo">
+        <img
+          src="/resources/logo/angular-white-transparent.svg"
+          alt="Angular white logo"
+          class="footer__img"
+        />
+        <span class="footer__text">
+          <a href="https://angular.io/" class="footer__link">Learn Angular</a>
+        </span>
+      </div>
+      <div class="footer__version">
+        <span>Current Version: 16.0.0+sha-ad04373</span>
+      </div>
+      <div class="footer__info">
+        <span class="footer__info-text">
+          <span class="footer__info">Powered by Google LLC ©2010-2023.</span>
+          <span class="footer__info"
+            >Code licensed under an MIT-style License.</span
+          >
+          <span class="footer__info"
+            >Documentation licensed under CC BY 4.0.</span
+          >
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>
