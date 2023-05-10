@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./component.css" />
+    <title>Layout Design</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="header">
+      <div class="header__left">
+        <button href="#" class="btn header__logo">
+          <a class="header__link" href="/">
+            <img
+              src="/resources/logo/angular-white-transparent.svg"
+              alt="Angular Logo"
+              class="header__logo-image"
+            />
+            <span class="header__logo-text">Material</span>
+          </a>
+        </button>
+        <nav class="header__nav">
+          <!-- <a href="/components/component.html"> -->
+          <button class="btn header__item">
+            <a class="header__link" href="/components/component.html"
+              >Components</a
+            >
+          </button>
+
+          <button class="btn header__item">CDK</button>
+          <button class="btn header__item">Guides</button>
+        </nav>
+      </div>
+      <div class="header__right">
+        <button class="btn header__button-version">
+          <span class="material-symbols-outlined header__arrow-sign">
+            expand_more
+          </span>
+          <span class="header__button-text">16.0.0</span>
+        </button>
+        <button href="#" class="btn header__github-link">
+          <img
+            src="/resources/logo/github-circle-white-transparent.svg"
+            alt=""
+            class="image"
+          />
+          <span class="header__github-text">GitHub</span>
+        </button>
+      </div>
+    </header>
+    <div class="container">
+      <nav class="navbar">
+        <span>Components</span>
+      </nav>
+      <aside class="sidebar">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Autocomplete</a>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Badge</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Bottom Sheet</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Button</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Button toggle</a>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Card</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Checkbox</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Chips</a>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Core</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Datepicker</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Dialog</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Divider</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Expansion Panel</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Form field</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Grid list</a>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Icon</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Input</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">List</a>
+            </li>
+            <li class="menu__item"><a href="#" class="menu__link">Menu</a></li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Paginator</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Progress bar</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Progress spinner</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Radio button</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Ripples</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Select</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Sidenav</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Slide toggle</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Slider</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Snackbar</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Sort header</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Stepper</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Table</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Tabs</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Toolbar</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Tooltip</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Tree</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <main class="main">
+        <div class="main__card">
+          <img
+            src="/resources/img/autocomplete.scene.png"
+            alt="Image 1"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Autocomplete</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/badge.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Badge</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/bottom-sheet.scene.png"
+            alt="Image 1"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Bottom Sheet</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/button.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Button</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/button-toggle.scene.png"
+            alt="Image 1"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Button toggle</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/card.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Card</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/checkbox.scene.png"
+            alt="Image 1"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Checkbox</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/chips.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Chips</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/core.scene.png"
+            alt="Image 1"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Core</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/datepicker.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Datepicker</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <div class="main__card">
+          <img
+            src="/resources/img/dialog.scene.png"
+            alt="Image 1"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Dialog</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/divider.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Divider</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/expansion.scene.png"
+            alt="Image 1"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Expansion Panel</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/form-field.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Form field</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/grid-list.scene.png"
+            alt="Image 1"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Grid list</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/icon.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Icon</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/input.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Input</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/list.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">List</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/menu.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Menu</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/paginator.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Paginator</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/progress-bar.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Progress bar</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/progress-spinner.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Progress spinner</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/radio.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Radio button</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/ripple.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Ripples</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/select.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Select</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <div class="main__card">
+          <img
+            src="/resources/img/sidenav.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Sidenav</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/slide-toggle.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Slide toggle</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/slider.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Slider</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/snack-bar.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Snackbar</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/sort.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Sort header</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/stepper.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Stepper</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/table.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Table</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/tabs"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Tabs</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/toolbar.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Toolbar</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/tooltip.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Tooltip</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+        <div class="main__card">
+          <img
+            src="/resources/img/tree.scene.png"
+            alt="Image 2"
+            class="main__card-image"
+          />
+          <h3 class="main__card-title">Tree</h3>
+          <p class="main__card-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+        </div>
+
+        <!-- Repeat for the remaining cards -->
+      </main>
+    </div>
+  </body>
+</html>
