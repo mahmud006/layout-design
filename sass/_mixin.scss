@@ -1,6 +1,6 @@
-@mixin btn {
+@mixin btn($bg) {
   .btn {
-    background-color: $header-bg-color;
+    background-color: $bg;
     border: none;
     color: inherit;
     font-size: 14px;
@@ -18,6 +18,69 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@mixin header {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    background-color: $header-bg-color;
+    color: $header-font-color;
+    padding: $header-padding;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    @include btn($header-bg-color);
+    .header__link {
+      display: flex;
+      align-items: center;
+      color: $header-font-color;
+      text-decoration: none;
+    }
+    &__left {
+      display: flex;
+      align-items: center;
+    }
+
+    &__logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+
+      &-image {
+        width: $header-logo-width;
+        height: auto;
+        margin-right: 0.6rem;
+      }
+    }
+    &__item {
+      // margin-left: 2rem;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+    }
+    &__button-version {
+      @include flex-prop();
+    }
+    &__button-text {
+      margin-left: 8px;
+    }
+    &__github-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: inherit;
+      .image {
+        width: $header-logo-width;
+        height: auto;
+        margin-right: 7px;
+      }
+    }
+  }
 }
 @mixin footer {
   .footer {
