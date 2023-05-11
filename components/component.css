@@ -6,6 +6,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -84,8 +88,7 @@ body {
   grid-template-rows: auto 1fr;
   height: 100vh;
 }
-
-.navbar {
+.container .navbar {
   display: flex;
   justify-content: space-between;
   background-color: rgb(103, 58, 183);
@@ -95,41 +98,40 @@ body {
   letter-spacing: 2px;
   grid-column: 1/-1;
 }
-
-.sidebar {
+.container .sidebar {
   grid-column: 1/4;
   min-width: 200px;
   border-right: 1px solid rgb(142, 140, 138);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
-.sidebar .menu__list {
+.container .sidebar .menu__list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-.sidebar .menu__item {
+.container .sidebar .menu__item {
   font-family: Arial, Helvetica, sans-serif;
   padding: 12px 10px 12px 30px;
   font-size: 16px;
   font-weight: 300;
 }
-.sidebar .menu__item:hover {
+.container .sidebar .menu__item:hover {
   background-color: #ebebeb;
 }
-.sidebar .menu__link {
+.container .sidebar .menu__link {
   text-decoration: none;
   color: #000000;
   padding: 4px 0;
 }
-
-.main {
+.container .main {
   grid-column: 4/-1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 40px 20px;
+  overflow-y: auto;
 }
-.main__card {
+.container .main__card {
   background-color: #fff;
   border-radius: 4px;
   border: 0.1px solid rgb(190, 190, 190);
@@ -137,20 +139,56 @@ body {
   height: 260px;
   margin: 20px;
 }
-.main__card-image {
+.container .main__card-image {
   display: block;
   margin: 0 auto 10px;
   max-width: 100%;
 }
-.main__card-title {
+.container .main__card-title {
   font-size: 1.2rem;
   margin: 0;
   padding: 10px 15px 2px 15px;
 }
-.main__card-description {
+.container .main__card-description {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   margin: 10px 0 0;
   padding: 0 15px;
   color: #6c6c6c;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(103, 58, 183);
+  padding: 20px;
+  color: #fff;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+.footer__img {
+  font-size: 10px;
+  height: 4rem;
+  width: 4rem;
+}
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__text {
+  margin-left: 10px;
+}
+.footer__version {
+  font-size: 16px;
+  font-weight: bold;
+}
+.footer__info-text {
+  font-style: italic;
+}
+.footer__info {
+  display: block;
+  text-align: center;
 }/*# sourceMappingURL=component.css.map */
